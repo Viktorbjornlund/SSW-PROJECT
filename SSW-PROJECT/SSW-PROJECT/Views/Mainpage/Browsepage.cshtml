@@ -7,15 +7,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="~/Views/Mainpage/Stylesheet.css" />
-    <title>Index</title>
+    <title></title>
 </head>
 <body>
     <div>
-        <h1>Välj metod för att hitta den bok du söker!</h1>
+        <h1>Browsepage</h1>
         <ul>
+            <li> @Html.ActionLink("Mainpage", "Index", "Mainpage", null, null) </li>
             <li> @Html.ActionLink("Search", "Searchpage", "Mainpage", null, null) </li>
-            <li> @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null) </li>
         </ul>
     </div>
 </body>
