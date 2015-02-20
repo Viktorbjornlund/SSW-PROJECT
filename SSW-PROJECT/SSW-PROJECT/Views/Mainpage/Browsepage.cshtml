@@ -7,15 +7,36 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title></title>
+    <title>Book-A-Book</title>
 </head>
 <body>
-    <div>
-        <h1>Browsepage</h1>
-        <ul>
-            <li> @Html.ActionLink("Mainpage", "Index", "Mainpage", null, null) </li>
-            <li> @Html.ActionLink("Search", "Searchpage", "Mainpage", null, null) </li>
-        </ul>
+    <div id="loginHead">
+        <form>
+            <input type="text" name="loginUsername" placeholder="Username" />
+            <input type="password" name="loginPassword" placeholder="Password" />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="main">
+        <h1>Book-A-Book</h1>
+        <h2>Browse</h2>
+        <div id="browseProperties">
+            @Html.ActionLink("Search", "Index", "Mainpage", null, null)
+            <select>
+                <option>Author</option>
+                <option>Title</option>
+                <option>Pages</option>
+            </select>
+            <button name="bookLayout">List</button>
+        </div>
+        <div id="browseResult">
+            <ul id="resultList" class="listLayout">
+
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
     </div>
 </body>
 </html>

@@ -7,16 +7,33 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="~/Views/Mainpage/Stylesheet.css" />
-    <title>Index</title>
+    <title>Book-A-Book</title>
 </head>
 <body>
-    <div>
-        <h1>Välj metod för att hitta den bok du söker!</h1>
-        <ul>
-            <li> @Html.ActionLink("Search", "Searchpage", "Mainpage", null, null) </li>
-            <li> @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null) </li>
+    <div id="loginHead">
+        <form>
+            <input type="text" name="loginUsername" placeholder="Username" />
+            <input type="password" name="loginPassword" placeholder="Password" />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="main">
+        <h1>Book-A-Book</h1>
+        <h2>Search</h2>
+        
+        @using(Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
+        {
+            <input type="text" placeholder="Search by title or by author" id="searchbox"/>
+            <button type="submit">Search</button>
+        }
+        @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null)
+
+        <ul id="resultList">
+
         </ul>
+    </div>
+    <div id="footer">
+        <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
     </div>
 </body>
 </html>

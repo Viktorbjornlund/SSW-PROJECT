@@ -141,9 +141,6 @@
     <Content Include="Views\Mainpage\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Mainpage\Searchpage.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Mainpage\Browsepage.cshtml" />
   </ItemGroup>
   <PropertyGroup>
@@ -160,11 +157,12 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>51849</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4126/</IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
