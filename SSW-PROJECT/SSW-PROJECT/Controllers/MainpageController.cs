@@ -26,9 +26,9 @@ namespace SSW_PROJECT.Controllers
             return View();
         }
 
-        //public ActionResult searchFunction()
-        //{
-
-        //}
+        public ActionResult searchFunction()
+        {
+            return View();
+        }
     }
 }
