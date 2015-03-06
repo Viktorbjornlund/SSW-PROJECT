@@ -10,16 +10,16 @@ using System.Web;
 
 namespace BL
 {
-    class author
+    class Author
     {
-        public author(string firstname, string lastname, int birthyear, string About)
+        public Author(string firstname, string lastname, int birthyear, string About)
         {
             this._FirstName = firstname;
             this._LastName = lastname;
             this._BirthYear = birthyear;
             this._About = About;
         }
-        public author() { }
+        public Author() { }
         private int _BirthYear, _Aid;
         private string _FirstName, _LastName, _About;
 
@@ -53,9 +53,9 @@ namespace BL
         {
             return Books.getByAuthor(this._Aid);
         }
-        public static author getByAid(int Aid)
+        public static Author getByAid(int Aid)
         {
-            author newauthor = null;
+            Author newauthor = null;
             SqlConnection con = new SqlConnection(Settings.ConnectionString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM AUTHOR WHERE Aid=@Aid", con);
             SqlParameter paramAid = new SqlParameter("Aid", SqlDbType.Int);
@@ -68,7 +68,7 @@ namespace BL
                 SqlDataReader dar = cmd.ExecuteReader();
                 if (dar.Read())
                 {
-                    newauthor = new author();
+                    newauthor = new Author();
                     newauthor.Aid = (int)dar["Aid"];
                     newauthor.BirthYear = (dar["BirthYear"] == DBNull.Value) ? 0 : Convert.ToInt32(dar["BirthYear"].ToString());
                     newauthor.FirstName = dar["FirstName"] as string;
@@ -86,9 +86,9 @@ namespace BL
             }
             return newauthor;
         }
-        public static List<author> getAll()
+        public static List<Author> getAll()
         {
-            List<author> results = new List<author>();
+            List<Author> results = new List<Author>();
             SqlConnection con = new SqlConnection(Settings.ConnectionString);
             SqlCommand cmd = new SqlCommand("SELECT * FROM AUTHOR", con);
             try
@@ -97,7 +97,7 @@ namespace BL
                 SqlDataReader dar = cmd.ExecuteReader();
                 while (dar.Read())
                 {
-                    author newAuthor = new author();
+                    Author newAuthor = new Author();
                     newAuthor.Aid = (int)dar["Aid"];
                     newAuthor.BirthYear = (dar["BirthYear"] == DBNull.Value) ? 0 : Convert.ToInt32(dar["BirthYear"].ToString());
                     newAuthor.FirstName = dar["FirstName"] as string;
