@@ -50,7 +50,7 @@ namespace BL
             }
             return results;
         }
-        public static List<Books> getAll()
+        public List<Books> getAll()
         {
             string sql = "SELECT BOOK.* FROM BOOK";
             List<Books> results = new List<Books>();
