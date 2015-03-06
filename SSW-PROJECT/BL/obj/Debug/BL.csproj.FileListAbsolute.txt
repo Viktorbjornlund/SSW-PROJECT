@@ -3,3 +3,8 @@ C:\Users\bjvi1337\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.pdb
 C:\Users\bjvi1337\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\bjvi1337\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
 C:\Users\bjvi1337\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
+C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.dll
+C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.pdb
+C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
+C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
