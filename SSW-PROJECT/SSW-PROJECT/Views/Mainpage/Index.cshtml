@@ -30,7 +30,9 @@
         @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null)
 
         <ul id="resultList">
-            @ViewBag.list
+            @foreach(BL.Books item in (List<BL.Books>)ViewBag.booklist){
+                <li>@item.Title</li>
+            }
         </ul>
     </div>
     <div id="footer">
