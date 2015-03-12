@@ -56,26 +56,26 @@ namespace BL
             List<Books> results = new List<Books>();
             SqlConnection con = new SqlConnection(Settings.ConnectionString);
             SqlCommand cmd = new SqlCommand(sql, con);
-            //try
-            //{
-            //    con.Open();
-            //    SqlDataReader dar = cmd.ExecuteReader();
-            //    while (dar.Read())
-            //    {
-            //        Books book = new Books();
-            //        book._title = dar["Title"] as string;
-            //        book._isbn = dar["Isbn"] as string;
-            //        results.Add(book);
-            //    }
-            //}
-            //catch (Exception er)
-            //{
-            //    throw er;
-            //}
-            //finally
-            //{
-            //    con.Close();
-            //}
+            try
+            {
+                con.Open();
+                SqlDataReader dar = cmd.ExecuteReader();
+                while (dar.Read())
+                {
+                    Books book = new Books();
+                    book._title = dar["Title"] as string;
+                    book._isbn = dar["Isbn"] as string;
+                    results.Add(book);
+                }
+            }
+            catch (Exception er)
+            {
+                throw er;
+            }
+            finally
+            {
+                con.Close();
+            }
             return results;
         }
         public static List<Books> getByAuthor(int authorID)
