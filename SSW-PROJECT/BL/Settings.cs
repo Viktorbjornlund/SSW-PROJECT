@@ -9,10 +9,10 @@ namespace BL
 {
     public static class Settings
     {
-        private static string _connectionString = @"Data Source=(localdb)\ProjectsV12;Initial Catalog=DBtest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False";
+        private static string _connectionString;
         public static string ConnectionString
         {
-            set { _connectionString = value; }
+            set { _connectionString = @"Data Source = TESTSERVER/SQLEXPRESS; Initial Catalog = DBbibliotek; Integrated Security = True"; }
             get { return _connectionString; }
         }
 

@@ -10,12 +10,11 @@ namespace SSW_PROJECT.Controllers
     {
         //
         // GET: /Mainpage/
-        BL.Books buissnessLogicBook = new BL.Books();
 
         public ActionResult Index()
         {
-            ViewBag.booklist = buissnessLogicBook.getAll();
-
+            BL.Books buissnesslogic = new BL.Books();
+            ViewBag.booklist = buissnesslogic.getAll();
             return View();
         }
 
@@ -26,14 +25,12 @@ namespace SSW_PROJECT.Controllers
 
         public ActionResult Browsepage()
         {
-            ViewBag.booklist = buissnessLogicBook.getAll();
             return View();
         }
 
         public ActionResult searchFunction()
         {
-            ViewBag.searchResult = buissnessLogicBook.search(Request.QueryString.Get("search"));
-            return View("index");
+            return View();
         }
     }
 }

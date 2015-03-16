@@ -22,7 +22,7 @@ namespace BL
         {
             get { return this._isbn; }
         }
-        public List<Books> search(string query)
+        public static List<Books> search(string query)
         {
             string sql = "SELECT BOOK.* FROM BOOK WHERE Title LIKE '%" + query + "%'";
             List<Books> results = new List<Books>();
