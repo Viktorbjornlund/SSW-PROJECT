@@ -49,9 +49,9 @@ namespace BL
             get { return this._About; }
             set { this._About = value; }
         }
-        public List<Books> getBooks()
+        public List<Book> getBooks()
         {
-            return Books.getByAuthor(this._Aid);
+            return Book.getByAuthor(this._Aid);
         }
         public static Author getByAid(int Aid)
         {

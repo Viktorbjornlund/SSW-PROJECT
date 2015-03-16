@@ -26,7 +26,20 @@ namespace SSW_PROJECT.Controllers
         {
             string userName = collection["username"];
             string password = collection["password"];
-            return View();
+            BL.User businesslogic = new BL.User();
+            BL.User user = businesslogic.getUser(userName);
+
+            if (user.Password == password)
+            {
+                Session["User"] = user;
+                ViewBag.succed = "You are now logged in.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.succed = "Failed to log in, username/password is invalid.";
+                return View();
+            }
         }
 
         public ActionResult Create()
@@ -90,7 +103,12 @@ namespace SSW_PROJECT.Controllers
         {
             try
             {
-                // insert logic
+                string userName = collection["username"];
+                string password = collection["password"];
+                string firstName = collection["firstname"];
+                string lastName = collection["lastname"];
+                string email = collection["email"];
+
                 return RedirectToAction("Index");
             }
             catch
