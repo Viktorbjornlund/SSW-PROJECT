@@ -24,7 +24,7 @@
         
         @using(Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
         {
-            <input type="text" placeholder="Search by title or by author" id="searchbox"/>
+            <input type="text" placeholder="Search by title or by author" id="searchbox" name="search"/>
             <button type="submit">Search</button>
         }
         @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null)
