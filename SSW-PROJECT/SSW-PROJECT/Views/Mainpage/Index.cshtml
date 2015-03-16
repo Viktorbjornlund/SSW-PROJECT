@@ -24,14 +24,18 @@
         
         @using(Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
         {
-            <input type="text" placeholder="Search by title or by author" id="searchbox"/>
+            <input type="text" placeholder="Search by title or by author" id="searchbox" name="search"/>
             <button type="submit">Search</button>
         }
         @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null)
 
         <ul id="resultList">
-            @foreach(BL.Books item in (List<BL.Books>)ViewBag.booklist){
-                <li>@item.Title</li>
+            @if (ViewBag.searchResult!=null)
+            {
+                foreach (BL.Books item in (List<BL.Books>)ViewBag.searchResult)
+                {
+                    <li>@item.Title</li>
+                }
             }
         </ul>
     </div>
