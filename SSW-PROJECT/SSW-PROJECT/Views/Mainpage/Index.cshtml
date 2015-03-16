@@ -30,8 +30,11 @@
         @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, null)
 
         <ul id="resultList">
-            @foreach(BL.Books item in (List<BL.Books>)ViewBag.booklist){
-                <li>@item.Title</li>
+            @if(ViewBag.searchResult!=null)
+            {
+                foreach(BL.Book item in (List<BL.Book>)ViewBag.searchResult){
+                    <li>@item.Title</li>
+                }
             }
         </ul>
     </div>
