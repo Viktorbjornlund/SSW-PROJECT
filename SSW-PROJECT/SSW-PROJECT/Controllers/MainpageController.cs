@@ -13,8 +13,8 @@ namespace SSW_PROJECT.Controllers
 
         public ActionResult Index()
         {
-            BL.Books buissnesslogic = new BL.Books();
-            ViewBag.booklist = buissnesslogic.getAll();
+            BL.Books businesslogic = new BL.Books();
+            ViewBag.booklist = businesslogic.getAll();
             return View();
         }
 

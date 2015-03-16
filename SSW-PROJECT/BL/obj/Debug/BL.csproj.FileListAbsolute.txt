@@ -13,3 +13,7 @@ C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.pdb
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
+C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.dll
+C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.pdb
+C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
+C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
