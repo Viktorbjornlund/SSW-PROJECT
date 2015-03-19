@@ -6,42 +6,44 @@
 
 <html>
 <head>
-    <link href="~/Views/Mainpage/Stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Stylesheet.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <title>Book-A-Book</title>
     
 </head>
 <body>
-    <div id="loginHead">
-        <form>
-            <input type="text" name="loginUsername" placeholder="Username" />
-            <input type="password" name="loginPassword" placeholder="Password" />
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    <div id="main">
-        <h1>Book-A-Book</h1>
-        <h2>Browse</h2>
-        <div id="browseProperties">
-            @Html.ActionLink("Search", "Index", "Mainpage", null, new {id = "searchLink"})
-            <select>
-                <option>Author</option>
-                <option>Title</option>
-                <option>Pages</option>
-            </select>
-            <button name="bookLayout">List</button>
+    <div id="wrapper">
+        <div id="loginHead">
+            <form>
+                <input type="text" name="loginUsername" placeholder="Username" />
+                <input type="password" name="loginPassword" placeholder="Password" />
+                <button type="submit">Login</button>
+            </form>
         </div>
-        <div id="browseResult">
-            <ul id="resultList" class="listLayout">
-                @foreach (BL.Book item in (List<BL.Book>)ViewBag.booklist)
-                {
-                    <li>@item.Title</li>
-                }
-            </ul>
+        <div id="main">
+            <h1>Book-A-Book</h1>
+            <h2>Browse</h2>
+            <div id="browseProperties">
+                @Html.ActionLink("Search", "Index", "Mainpage", null, new {id = "searchLink"})
+                <select>
+                    <option>Author</option>
+                    <option>Title</option>
+                    <option>Pages</option>
+                </select>
+                <button name="bookLayout">List</button>
+            </div>
+            <div id="browseResult">
+                <ul id="resultList" class="listLayout">
+                    @foreach (BL.Book item in (List<BL.Book>)ViewBag.booklist)
+                    {
+                        <li>@item.Title</li>
+                    }
+                </ul>
+            </div>
         </div>
-    </div>
-    <div id="footer">
-        <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
+        <div id="footer">
+            <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
+        </div>
     </div>
 </body>
 </html>
