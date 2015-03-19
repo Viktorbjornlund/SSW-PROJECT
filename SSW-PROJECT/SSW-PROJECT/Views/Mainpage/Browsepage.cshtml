@@ -23,7 +23,7 @@
         <h1>Book-A-Book</h1>
         <h2>Browse</h2>
         <div id="browseProperties">
-            @Html.ActionLink("Search", "Index", "Mainpage", null, null)
+            @Html.ActionLink("Search", "Index", "Mainpage", null, new {id = "searchLink"})
             <select>
                 <option>Author</option>
                 <option>Title</option>

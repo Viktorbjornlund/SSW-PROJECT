@@ -1,7 +1,39 @@
 ﻿body {
-    background-color:yellow;
-    
+    background-color:gray;
+    text-align:center;
 }
 div {
-    background-color:lightyellow;
+    background-color: white;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+#browseLink{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    box-shadow: white 0px 0px 5px 5px inset;
+}
+#searchLink{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    box-shadow: white 0px 0px 5px 5px inset;
+}
+button{
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    box-shadow: white 0px 0px 5px 5px inset;
 }
