@@ -10,6 +10,5 @@ C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
 C:\Users\olfi1314\Desktop\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.dll
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\bin\Debug\BL.pdb
-C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.dll
 C:\Users\Nisse\Source\SSW-PROJECT\SSW-PROJECT\BL\obj\Debug\BL.pdb
