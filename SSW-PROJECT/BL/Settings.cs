@@ -9,7 +9,7 @@ namespace BL
 {
     public static class Settings
     {
-        private static string _connectionString = @"Data Source=(localdb)\Projects;Initial Catalog=DBtest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False";
+        private static string _connectionString=@"Data Source=TESTSERVER\SQLEXPRESS;Initial Catalog=DBbiliotek;User Id=biblologin; Password=Hejhej123";
         public static string ConnectionString
         {
             set { _connectionString = value; }
