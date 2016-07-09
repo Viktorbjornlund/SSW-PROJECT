@@ -1,0 +1,22 @@
+﻿*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+h1{
+    text-align:center;
+    font-size:475% !important;
+    color:blanchedalmond !important;
+    text-transform:uppercase;
+    letter-spacing:1%;
+    margin:45% 0;
+}
+/*Start Parallax*/
+.parallax {
+    background: url("http://wallpapercave.com/wp/9PUgvMA.jpg") repeat fixed 100%;
+}
+.parallax-inner{
+    padding-top:10%;
+    padding-bottom:18%;
+}
+/*End Parallax*/

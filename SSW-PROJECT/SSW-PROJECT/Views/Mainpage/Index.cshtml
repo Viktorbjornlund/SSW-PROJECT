@@ -6,42 +6,217 @@
 
 <html>
 <head>
+    <link href="~/Content/ParallaxCss.css" rel="stylesheet" />
     <link href="~/Content/Stylesheet.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <title>Book-A-Book</title>
+    <!--Bootstrap Start-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--Bootstrap End-->
 </head>
 <body>
-    <div id="wrapper">
-        <div id="loginHead">
-            <form>
-                <input type="text" name="loginUsername" placeholder="Username" />
-                <input type="password" name="loginPassword" placeholder="Password" />
-                <button type="submit">Login</button>
-            </form>
-        </div>
-        <div id="main">
+    <!--TopNavBar Start-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div id="loginHead">
+                            <form class="navbar-form">
+                                <input type="text" name="loginUsername" placeholder="Username" />
+                                <input type="password" name="loginPassword" placeholder="Password" />
+                                <button type="submit" class="btn btn-default">Login</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--TopNavBar End-->
+
+    <section class="parallax">
+        <div class="parallax-inner">
             <h1>Book-A-Book</h1>
-            <h2>Search</h2>
-        
-            @using(Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
+        </div>
+    </section>
+
+
+    <div id="wrapper">
+        <h2>Welcome To The Library</h2>
+        <div class="bookDivider">
+            <span class="bookDividerIcon">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+            </span>
+        </div>
+
+        <ul style="padding-top:50px;" class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Title</a></li>
+            <li role="presentation"><a href="#">Author</a></li>
+            <li role="presentation"><a href="#">Year</a></li>
+        </ul>
+
+        <div id="main">
+
+            @using (Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
             {
-                <input type="text" placeholder="Search by title or by author" id="searchbox" name="search"/>
-                <button type="submit">Search</button>
+                <div style="margin-top:30px;">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input type="text" placeholder="Search by title or by author" id="searchbox" name="search" />
+                    <button type="submit" class="btn btn-default">Search</button>
+                </div>
             }
-            @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, new {id = "browseLink"})
+            @Html.ActionLink("Browse", "Browsepage", "Mainpage", null, new { id = "browseLink" })
 
             <ul id="resultList">
-                @if(ViewBag.searchResult!=null)
+                @if (ViewBag.searchResult != null)
                 {
-                    foreach(BL.Book item in (List<BL.Book>)ViewBag.searchResult){
+                    foreach (BL.Book item in (List<BL.Book>)ViewBag.searchResult)
+                    {
                         <li>@item.Title</li>
                     }
                 }
             </ul>
         </div>
-        <div id="footer">
-            <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+
+    </div>
+
+    <section class="parallax" style="margin-top:40px;">
+        <div class="parallax-inner">
+          <h1>Not A Member?</h1>
+            <div id="wrapper">                
+                <form class="form-horizontal">
+                    <div class="form-group">                       
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">                        
+                        <div class="col-sm-12">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>                  
+                    <div class="form-group" style="text-align:center">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>                
+            </div>
         </div>
+    </section>
+
+    <div id="wrapper">
+        <h2>Most Popular Books</h2>
+        <div class="bookDivider">
+            <span class="bookDividerIcon">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+            </span>
+        </div>
+
+
+        <div class="row" style="padding-top:80px;">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x150">
+                    <div class="caption">
+                        <h3>Book label</h3>
+                        <p>Info om boken osv...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/350x150">
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="text-align:center">
+
+        <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
     </div>
 </body>
 </html>
