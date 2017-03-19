@@ -1,0 +1,17 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            @Html.ActionLink("BOOK-A-BOOK", "StartPage", new { id = 1 }, new { @class = "navbar-brand" })
+        </div>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Search", "SearchPage", "Mainpage")</li>
+            <li>@Html.ActionLink("Browse", "BrowsePage", "Mainpage")</li>
+        </ul>
+
+        <form>
+            <input type="text" name="loginUsername" placeholder="Username" />
+            <input type="password" name="loginPassword" placeholder="Password" />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</nav>

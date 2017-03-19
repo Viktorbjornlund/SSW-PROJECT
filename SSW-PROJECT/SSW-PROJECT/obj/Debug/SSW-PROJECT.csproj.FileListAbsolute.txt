@@ -140,3 +140,34 @@ C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.
 C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.csprojResolveAssemblyReference.cache
 C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.dll
 C:\Users\Viktor\Documents\GitHub\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.pdb
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\Content\Stylesheet.css
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\SSW-PROJECT.dll.config
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\SSW-PROJECT.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\SSW-PROJECT.pdb
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\BL.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\Newtonsoft.Json.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Net.Http.Formatting.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Helpers.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Http.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Http.WebHost.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Mvc.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Razor.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.Razor.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\BL.pdb
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\Newtonsoft.Json.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Net.Http.Formatting.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Helpers.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Http.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Http.WebHost.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Mvc.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.Razor.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\bin\System.Web.WebPages.Razor.xml
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.csprojResolveAssemblyReference.cache
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.dll
+C:\Users\Viktor\Documents\Visual Studio 2015\Projects\SSW-PROJECT\SSW-PROJECT\SSW-PROJECT\obj\Debug\SSW-PROJECT.pdb

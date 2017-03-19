@@ -13,7 +13,7 @@ namespace BL
         {
         }
 
-        private string _title, _isbn;
+        private string _title, _isbn, _publicationYear, _pages;
         public string Title
         {
             get { return this._title; }
@@ -21,6 +21,14 @@ namespace BL
         public string Isbn
         {
             get { return this._isbn; }
+        }
+        public string PublicationYear
+        {
+            get { return this._publicationYear; }
+        }
+        public string Pages
+        {
+            get { return this._pages; }
         }
         public List<Book> search(string query)
         {
@@ -37,6 +45,8 @@ namespace BL
                     Book book = new Book();
                     book._title = dar["Title"] as string;
                     book._isbn = dar["Isbn"] as string;
+                    book._publicationYear = dar["PublicationYear"] as string;
+                    book._pages = dar["Pages"] as string;
                     results.Add(book);
                 }
             }
@@ -52,7 +62,7 @@ namespace BL
         }
         public List<Book> getAll()
         {
-            string sql = "SELECT BOOK.* FROM BOOK";
+            string sql = "SELECT * FROM BOOK";
             List<Book> results = new List<Book>();
             SqlConnection con = new SqlConnection(Settings.ConnectionString);
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -65,6 +75,8 @@ namespace BL
                     Book book = new Book();
                     book._title = dar["Title"] as string;
                     book._isbn = dar["Isbn"] as string;
+                    book._publicationYear = dar["PublicationYear"] as string;
+                    book._pages = dar["Pages"] as string;
                     results.Add(book);
                 }
             }
@@ -95,6 +107,8 @@ namespace BL
                     Book book = new Book();
                     book._title = dar["Title"] as string;
                     book._isbn = dar["Isbn"] as string;
+                    book._publicationYear = dar["PublicationYear"] as string;
+                    book._pages = dar["Pages"] as string;
                     results.Add(book);
                 }
             }

@@ -1,0 +1,27 @@
+﻿@{ 
+    ViewBag.Title = "Book-A-Book";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Stylesheet.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @RenderPage("~/Views/Components/Header.cshtml")
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer class="footer">
+        <div class="container">
+            @RenderPage("~/Views/Components/Footer.cshtml")
+        </div>
+    </footer>
+</body>
+</html>
+<script src="~/Content/js/jquery-3.2.0.min.js"></script>
+<script src="~/Content/js/bootstrap.min.js"></script>

@@ -1,49 +1,23 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Layout/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <link href="~/Content/Stylesheet.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Book-A-Book</title>
-    
-</head>
-<body>
-    <div id="wrapper">
-        <div id="loginHead">
-            <form>
-                <input type="text" name="loginUsername" placeholder="Username" />
-                <input type="password" name="loginPassword" placeholder="Password" />
-                <button type="submit">Login</button>
-            </form>
-        </div>
-        <div id="main">
-            <h1>Book-A-Book</h1>
-            <h2>Browse</h2>
-            <div id="browseProperties">
-                @Html.ActionLink("Search", "Index", "Mainpage", null, new {id = "searchLink"})
-                <select>
-                    <option>Author</option>
-                    <option>Title</option>
-                    <option>Pages</option>
-                </select>
-                <button name="bookLayout">List</button>
-            </div>
-            <div id="browseResult">
-                <ul id="resultList" class="listLayout">
-                    @foreach (BL.Book item in (List<BL.Book>)ViewBag.booklist)
-                    {
-                        <li>@item.Title</li>
-                    }
-                </ul>
-            </div>
-        </div>
-        <div id="footer">
-            <span>Skapat av webInteractive AB, AKA Filip, Nils, Viktor.</span>
-        </div>
+<h2>Browse</h2>
+<div id="browseProperties">
+        
+    <select>
+        <option>Author</option>
+        <option>Title</option>
+        <option>Pages</option>
+    </select>
+    <button name="bookLayout">List</button>
+</div>
+@foreach (BL.Book item in (List<BL.Book>)ViewBag.booklist)
+{
+    <div class="row book-row">
+        <div class="col-sm-12"><p>@item.Title</p></div>
+        <div class="col-sm-4">ISBN: @item.Isbn</div>
+        <div class="col-sm-4">Publication year: @item.PublicationYear</div>
+        <div class="col-sm-4">Pages: @item.Pages</div>
     </div>
-</body>
-</html>
+}

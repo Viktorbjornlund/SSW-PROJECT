@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Layout/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+
+@using (Html.BeginForm("searchFunction", "Mainpage", FormMethod.Get))
+{
+    <input type="text" placeholder="Search by title or by author" id="searchbox" name="search" />
+            <button type="submit">Search</button>
+}
+
+@if (ViewBag.searchResult != null)
+{
+    foreach (BL.Book item in (List<BL.Book>)ViewBag.searchResult)
+    {
+        <div class="row book-row">
+            <div class="col-sm-12"><p>@item.Title</p></div>
+            <div class="col-sm-4">ISBN: @item.Isbn</div>
+            <div class="col-sm-4">Publication year: @item.PublicationYear</div>
+            <div class="col-sm-4">Pages: @item.Pages</div>
+        </div>
+    }
+}

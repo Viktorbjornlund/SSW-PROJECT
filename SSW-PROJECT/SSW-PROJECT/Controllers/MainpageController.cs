@@ -9,20 +9,17 @@ namespace SSW_PROJECT.Controllers
     public class MainpageController : Controller
     {
         BL.Book businessLogicBook = new BL.Book();
-        //
-        // GET: /Mainpage/
 
-        public ActionResult Index()
+        public ActionResult StartPage()
+        {
+            return View();
+        }
+        public ActionResult SearchPage()
         {
             return View();
         }
 
-        public ActionResult Searchpage()
-        {
-            return View();
-        }
-
-        public ActionResult Browsepage()
+        public ActionResult BrowsePage()
         {
             ViewBag.booklist = businessLogicBook.getAll();
             return View();
@@ -31,7 +28,7 @@ namespace SSW_PROJECT.Controllers
         public ActionResult searchFunction()
         {
             ViewBag.searchResult=businessLogicBook.search(Request.QueryString.Get("search"));
-            return View("Index");
+            return View("SearchPage");
         }
     }
 }
